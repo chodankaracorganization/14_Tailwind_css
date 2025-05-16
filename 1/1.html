@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="flex items-center justify-center h-screen gap-50">
+      <section class="flex items-center justify-center flex-col gap-2">
+        <h1 class="text-lg">Login</h1>
+        <h2 class="text-sm text-gray-500 mb-5">
+          Enter your credential to access your account
+        </h2>
+        <button
+          class="flex items-center justify-center border-1 w-70 md:w-100 p-2 rounded-md"
+        >
+          <img src="/assets/google-icon.svg" alt="google image" class="w-10" />
+          Login with Google
+        </button>
+        <section class="flex items-center w-70 md:w-full">
+          <hr class="flex-1 border-1 border-gray-300 my-12" />
+          <span class="p-2">Or</span>
+          <hr class="flex-1 border-1 border-gray-300" />
+        </section>
+        <section class="flex flex-col w-70 md:w-full gap-10">
+          <section class="flex flex-col justify-start items-start">
+            <label>Email Address</label>
+            <input
+              placeholder="email@gmail.com"
+              alt="email address"
+              class="border-1 border-gray-400 rounded-sm p-2 w-full"
+            />
+          </section>
+          <section
+            class="flex flex-col w-70 md:w-full justify-start items-start"
+          >
+            <div class="flex w-full justify-between">
+              <label>Password</label>
+              <label class="text-blue-600">Forgot Password?</label>
+            </div>
+            <input
+              placeholder="Password"
+              alt="email address"
+              class="border-1 border-gray-400 rounded-sm p-2 w-70 md:w-full"
+            />
+          </section>
+        </section>
+        <button
+          class="border-1 rounded-sm bg-blue-500 text-white py-2 w-70 md:w-full m-3"
+        >
+          Login
+        </button>
+        <label class="text-center"
+          >Don't have an account?<span class="font-bold cursor-pointer"
+            >Register here</span
+          >
+        </label>
+      </section>
+      <section class="hidden sm:block">
+        <img
+          src="/assets/Pointing_girl.png"
+          class="border-0 h-100 object-cover"
+          alt="Pointing_girl"
+        />
+      </section>
+    </main>
+  </body>
+</html>
